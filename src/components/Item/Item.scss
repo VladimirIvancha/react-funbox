@@ -1,0 +1,177 @@
+.item {
+  @include mp-0;
+  @include fc-center;
+  max-width: 320px;
+  height: 480px;
+
+  &__container {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__card {
+    @include mp-0;
+    @include fc-center;
+    background-image: url(../assets/images/card.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+
+    &_active {
+      background-image: url(../assets/images/card-active.svg);
+    }
+
+    &_absent {
+        @include absent;
+        background-image: url(../assets/images/card-absent.svg);
+        cursor: unset;
+    }
+    
+    &:hover .item__card-intro-text_hover::after {
+        color: #E62E7A;
+        content: 'Котэ не одобряет?';
+    }
+  }
+
+  &__card-intro-text {
+    @include mp-0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+    margin: 21px 0 0 0;
+
+    &::after {
+        content: 'Сказочное заморское яство';
+    } 
+  }
+
+  &__card-wrapper {
+    @include mp-0;
+    @include fc-left;
+
+    &_vertical {
+      @include fc-center;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+    }
+  }
+
+  &__card-title {
+    @include mp-0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+  }
+
+  &__card-taste {
+    @include mp-0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+  }
+
+  &__card-set {
+    @include mp-0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+    margin: 15px 0 0 0;
+  }
+
+  &__card-mouse {
+    @include mp-0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+  }
+
+  &__card-satisfied {
+    @include mp-0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+  }
+
+  &__card-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #2ea8e6;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+
+    &_active {
+      background: #d91667;
+    }
+  }
+
+  &__card-weight {
+    @include mp-0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    margin: 10px 0 0 0;
+  }
+
+  &__card-kg {
+    @include mp-0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    margin: 10px 0 0 0;
+  }
+
+  &__text {
+    @include mp-0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #ffffff;
+    margin: 14px 0 0 0;
+    
+    &_absent {
+        color: #FFFF66;
+    }
+  }
+
+  &__buy-btn {
+    @include mp-0;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #22A7E9;
+    margin: 0 0 0 2px;
+    cursor: pointer;
+    background-color: #000000;
+    border-style: none;
+  }
+}

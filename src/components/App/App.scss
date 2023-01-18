@@ -1,0 +1,53 @@
+.app {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  @include mp-0;
+  @include fc-center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  justify-content: center;
+
+  &__title {
+    @include mp-0;
+    font-family: "Exo 2", sans-serif;
+    font-size: 36px;
+    line-height: 44px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0px 1px 1px #000000;
+    margin: 36px 0 0 0;
+  }
+
+  &__container {
+    max-width: 1120px;
+    width: 100%;
+    padding: 25px 0 0 0;
+  }
+
+  &__items {
+    @include mp-0;
+    list-style: none;
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 320px));
+    margin: auto;
+    gap: 80px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .app {
+    &__container {
+      max-width: 720px;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .app {
+    &__container {
+      max-width: 320px;
+    }
+  }
+}

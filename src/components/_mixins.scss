@@ -1,0 +1,88 @@
+@mixin fc-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin fc-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@mixin fc-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@mixin fr-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin fr-top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+@mixin fcj-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin frj-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin mp-0 {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin absent {
+  .item {
+    
+    &__card-intro-text_absent {
+      color: #b3b3b3;
+      opacity: 0.5;
+    }
+    &__card-title_absent {
+      color: #b3b3b3;
+      opacity: 0.5;
+    }
+    &__card-taste_absent {
+      color: #b3b3b3;
+      opacity: 0.5;
+    }
+    &__card-set_absent {
+      color: #b3b3b3;
+      opacity: 0.5;
+    }
+    &__card-mouse_absent {
+      color: #b3b3b3;
+      opacity: 0.5;
+    }
+    &__card-satisfied_absent {
+      color: #b3b3b3;
+      opacity: 0.5;
+    }
+    &__card-circle_absent {
+      background: #b3b3b3;
+    }
+    &__card-weight_absent {
+      opacity: 0.5;
+    }
+    &__card-kg_absent {
+      opacity: 0.5;
+    }
+    
+  }
+}
