@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-funbox/static/css/main.28ce1523.css",
+    "main.js": "/react-funbox/static/js/main.df6aea7d.js",
+    "static/media/card.svg": "/react-funbox/static/media/card.827f6f182dca8c4495c5.svg",
+    "static/media/card-absent.svg": "/react-funbox/static/media/card-absent.72bc334cec1daccd4beb.svg",
+    "static/media/card-active.svg": "/react-funbox/static/media/card-active.e782c23380bc44725f56.svg",
+    "static/media/Exo2-Thin.ttf": "/react-funbox/static/media/Exo2-Thin.d2da8078a320bf47bc87.ttf",
+    "index.html": "/react-funbox/index.html",
+    "main.28ce1523.css.map": "/react-funbox/static/css/main.28ce1523.css.map",
+    "main.df6aea7d.js.map": "/react-funbox/static/js/main.df6aea7d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28ce1523.css",
+    "static/js/main.df6aea7d.js"
+  ]
+}
